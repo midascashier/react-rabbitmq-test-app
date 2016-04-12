@@ -183,9 +183,9 @@ var ChatApp = React.createClass({
 	},
 
 	handleMessageSubmit(message) {
-		var {messages} = this.state;
-		messages.push(message);
-		this.setState({messages});
+		//var {messages} = this.state;
+		//messages.push(message);
+		//this.setState({messages});
 		socket.emit('send:message', message);
 	},
 

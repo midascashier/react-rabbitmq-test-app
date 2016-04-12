@@ -13,7 +13,7 @@ var server = http.createServer(app);
 /* Configuration */
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
-app.set('port', 8080);
+app.set('port', 9090);
 
 if (process.env.NODE_ENV === 'development') {
 	app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
